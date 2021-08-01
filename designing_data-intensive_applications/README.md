@@ -1,18 +1,18 @@
-#Designing Data-Intensive Applications
+# Designing Data-Intensive Applications
 
-##Part I
+## Part I
 
-###Chapter 1
+### Chapter 1
 
-###Chapter 2
+### Chapter 2
 
-###Chapter 3
+### Chapter 3
 
-###Chapter 4
+### Chapter 4
 
-##Part II
+## Part II
 
-###Chapter 5 Replication
+### Chapter 5 Replication
 
 Replication means keeping a copy of the same data on multiple machines that are connected via a network.There are 
 several reasons why you might want to replicate data:
@@ -21,7 +21,7 @@ several reasons why you might want to replicate data:
 - To allow the system to continue working even if some of its parts have failed (and thus increase availability)
 - To scale out the number of machines that can serve read queries (and thus increase read throughput)
 
-###Chapter 6 Partitioning
+### Chapter 6 Partitioning
 
 Partition == sharding
 
