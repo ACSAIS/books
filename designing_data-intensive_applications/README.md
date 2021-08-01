@@ -2,13 +2,13 @@
 
 ## Part I
 
-### Chapter 1
+### Chapter 1 -
 
-### Chapter 2
+### Chapter 2 - 
 
-### Chapter 3
+### Chapter 3 -
 
-### Chapter 4
+### Chapter 4 -
 
 ## Part II
 
@@ -25,13 +25,27 @@ several reasons why you might want to replicate data:
 
 Partition == sharding
 
-**Partitioning of key-value data**, hash-function can help to evenly distribute data among all partitions.
+**Hash partitioning**, hash-function can help to evenly distribute data among all partitions.
 
 **Partitioning Secondary Indexes by document**
-![Partitioning Secondary Indexes by document](/designing_data-intensive_applications/img/partition_secondary_indexes_by_document.png "Partitioning Secondary Indexes by document")
+![Partitioning Secondary Indexes by document](img/partition_secondary_indexes_by_document.png "Partitioning Secondary Indexes by document")
 
 Each partition maintains its own secondary indexes, covering only the documents in that partition.
 
 +easy to write
 
 -hard to read(need to check all partitions)
+
+**Partitioning Secondary Indexes by term**
+![Partitioning Secondary Indexes by term](img/partition_secondary_indexes_by_term.png "Partitioning Secondary Indexes by term")
+
++easy to read
+
+-hard to write(write to a single document may affect multiple partitions)
+
+*updates to global secondary indexes are often asynchronous*
+
+**Rebalancing partitions** -
+
+**Request routing**
+![Request routing](img/Request_routing.png)
